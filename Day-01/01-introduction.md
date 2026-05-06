@@ -18,6 +18,8 @@ For automating Linux and Windows, Ansible connects to managed nodes and pushes o
 
 For automating network devices and other IT appliances where modules cannot be executed, Ansible runs on the control node. Since Ansible is agentless, it can still communicate with devices without requiring an application or service to be installed on the managed node.
 
+<img width="1253" height="599" alt="image" src="https://github.com/user-attachments/assets/b3362c0b-69f7-437f-83e6-454f3d05de95" />
+
 <img width="1276" height="630" alt="image" src="https://github.com/user-attachments/assets/068f977c-8cff-4bc0-83fa-605772beab0b" />
 
 
