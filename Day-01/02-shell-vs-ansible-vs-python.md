@@ -23,3 +23,10 @@ echo "hi"
 
 Easily and quickly scale the systems you automate through a modular design that supports a large range of operating systems, cloud platforms, and network devices.
 
+
+# Comparison with Python
+
+- We will be using python if incase app need to communicate with API.
+
+<img width="1144" height="612" alt="image" src="https://github.com/user-attachments/assets/53b3eef3-abe4-47d9-a69e-4a87f7a539e0" />
+
