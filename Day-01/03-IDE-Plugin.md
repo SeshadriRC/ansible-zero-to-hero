@@ -1,0 +1,2 @@
+- We can use vscode.
+- Install plugin `yaml`, `Ansible` on vscode.
