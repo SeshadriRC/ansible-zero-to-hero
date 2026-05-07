@@ -89,7 +89,9 @@ if __name__ == '__main__':
 
 ## Usage
 
-```
+### Use case - 1
+
+```bash
 ansible-playbook -i inventory <Adhoc command or Playbook.yml>
 
 
@@ -111,6 +113,8 @@ ubuntu@3.108.52.227 | SUCCESS => {
     "ping": "pong"
 }
 ```
+
+### Use case - 2
 
 - Incase if you don't want to use inventory file , then add below entries in `/etc/ansible/hosts`. so automatically it will pick the hosts from there
 
@@ -136,3 +140,18 @@ ubuntu@3.108.52.227 | SUCCESS => {
     "ping": "pong"
 }
 ```
+
+### Use case - 3
+
+```bash
+root@LAPTOP-QMBUJPPJ:~# ansible -i inventory.ini -m ping ubuntu@3.108.52.227
+[WARNING]: Host 'ubuntu@3.108.52.227' is using the discovered Python interpreter at '/usr/bin/python3.14', but future installation of another Python interpreter could cause a different interpreter to be discovered. See https://docs.ansible.com/ansible-core/2.20/reference_appendices/interpreter_discovery.html for more information.
+ubuntu@3.108.52.227 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3.14"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+```
+
