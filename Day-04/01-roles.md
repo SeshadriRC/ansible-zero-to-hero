@@ -9,6 +9,9 @@ a particular system or application component.
 This modular approach promotes reusability, maintainability, and consistency across different 
 playbooks and environments.
 
+<img width="1919" height="970" alt="image" src="https://github.com/user-attachments/assets/ff2e9569-de38-4233-95d9-81a349747e04" />
+
+
 ## Key Components of an Ansible Role
 
 ### Tasks
