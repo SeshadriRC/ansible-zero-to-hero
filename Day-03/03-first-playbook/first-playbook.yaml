@@ -1,6 +1,6 @@
 ---
 - hosts: all
-  become: true
+  become: true        # It indicates, play should run as a root user.
   tasks:
     - name: Install apache httpd
       ansible.builtin.apt:
