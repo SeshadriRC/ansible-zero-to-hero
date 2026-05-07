@@ -100,9 +100,6 @@ my_collection/
 └── README.md
 ```
 
-### Summarize
-
-Playbook --> Plays --> Hosts --> Tasks --> Modules
 
 ### Using a Collection
 
@@ -111,3 +108,9 @@ Playbook --> Plays --> Hosts --> Tasks --> Modules
   community.general.my_module:
     option: value
 ```
+
+### Summarize
+
+Playbook --> Plays --> Hosts --> Tasks --> Modules
+
+
