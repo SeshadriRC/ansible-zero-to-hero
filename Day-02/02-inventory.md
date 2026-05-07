@@ -91,4 +91,48 @@ if __name__ == '__main__':
 
 ```
 ansible-playbook -i inventory <Adhoc command or Playbook.yml>
+
+
+root@LAPTOP-QMBUJPPJ:~# ansible -i inventory.ini -m ping all
+[WARNING]: Host 'ubuntu@3.110.121.253' is using the discovered Python interpreter at '/usr/bin/python3.14', but future installation of another Python interpreter could cause a different interpreter to be discovered. See https://docs.ansible.com/ansible-core/2.20/reference_appendices/interpreter_discovery.html for more information.
+ubuntu@3.110.121.253 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3.14"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+[WARNING]: Host 'ubuntu@3.108.52.227' is using the discovered Python interpreter at '/usr/bin/python3.14', but future installation of another Python interpreter could cause a different interpreter to be discovered. See https://docs.ansible.com/ansible-core/2.20/reference_appendices/interpreter_discovery.html for more information.
+ubuntu@3.108.52.227 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3.14"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+```
+
+- Incase if you don't want to use inventory file , then add below entries in `/etc/ansible/hosts`. so automatically it will pick the hosts from there
+
+<img width="1048" height="300" alt="image" src="https://github.com/user-attachments/assets/4cd36221-280b-46f2-afd4-28235c76b97a" />
+
+
+```bash
+root@LAPTOP-QMBUJPPJ:~# ansible  -m ping all
+[WARNING]: Host 'ubuntu@3.110.121.253' is using the discovered Python interpreter at '/usr/bin/python3.14', but future installation of another Python interpreter could cause a different interpreter to be discovered. See https://docs.ansible.com/ansible-core/2.20/reference_appendices/interpreter_discovery.html for more information.
+ubuntu@3.110.121.253 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3.14"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+[WARNING]: Host 'ubuntu@3.108.52.227' is using the discovered Python interpreter at '/usr/bin/python3.14', but future installation of another Python interpreter could cause a different interpreter to be discovered. See https://docs.ansible.com/ansible-core/2.20/reference_appendices/interpreter_discovery.html for more information.
+ubuntu@3.108.52.227 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3.14"
+    },
+    "changed": false,
+    "ping": "pong"
+}
 ```
