@@ -30,7 +30,21 @@ ssh ubuntu@15.206.212.162
 
 ### Using Password 
 
+**Before Password Authentication**
+
+<img width="802" height="80" alt="image" src="https://github.com/user-attachments/assets/a7599edd-225e-4823-8da2-1ac9d0b12839" />
+
+**After Password Authentication**
+
 - Go to the file `/etc/ssh/sshd_config.d/60-cloudimg-settings.conf`
 - Update `PasswordAuthentication yes`
 - Restart SSH -> `sudo systemctl restart ssh`
+- set the passwd for `ubuntu` user
+
+```bash
+passwd ubuntu
+welcome1
+```
+
+<img width="781" height="326" alt="image" src="https://github.com/user-attachments/assets/63362580-899e-408b-9842-0c58f7408c09" />
 
