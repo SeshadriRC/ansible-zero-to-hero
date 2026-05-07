@@ -100,6 +100,10 @@ my_collection/
 └── README.md
 ```
 
+### Summarize
+
+Playbook --> Plays --> Hosts --> Tasks --> Modules
+
 ### Using a Collection
 
 ```
