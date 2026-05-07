@@ -2,6 +2,11 @@
 
 ## EC2 Instances
 
+- Provision two EC2 instances
+
+<img width="1919" height="333" alt="image" src="https://github.com/user-attachments/assets/554a58a0-8abb-4256-ab15-1ed52466e1dc" />
+
+
 ### Using Public Key
 
 ```
