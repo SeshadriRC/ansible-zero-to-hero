@@ -1,13 +1,15 @@
 # Ansible Roles
 
-An Ansible role is a reusable, self-contained unit of automation that is used to 
+- An Ansible role is a reusable, self-contained unit of automation that is used to 
 organize and manage tasks, variables, files, templates, and handlers in a structured way. 
 
-Roles help to encapsulate and modularize the logic and configuration needed to manage 
+- Roles help to encapsulate and modularize the logic and configuration needed to manage 
 a particular system or application component. 
 
-This modular approach promotes reusability, maintainability, and consistency across different 
+- This modular approach promotes reusability, maintainability, and consistency across different 
 playbooks and environments.
+
+- A Play can use multiple roles.
 
 <img width="1919" height="970" alt="image" src="https://github.com/user-attachments/assets/ff2e9569-de38-4233-95d9-81a349747e04" />
 
