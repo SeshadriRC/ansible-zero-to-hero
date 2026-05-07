@@ -155,3 +155,26 @@ ubuntu@3.108.52.227 | SUCCESS => {
 }
 ```
 
+### Use case - 4
+
+```bash
+root@LAPTOP-QMBUJPPJ:~# vi inventory.ini
+
+root@LAPTOP-QMBUJPPJ:~# ansible -i inventory.ini -m shell -a "hostname" db
+[WARNING]: Host 'ubuntu@3.110.121.253' is using the discovered Python interpreter at '/usr/bin/python3.14', but future installation of another Python interpreter could cause a different interpreter to be discovered. See https://docs.ansible.com/ansible-core/2.20/reference_appendices/interpreter_discovery.html for more information.
+ubuntu@3.110.121.253 | CHANGED | rc=0 >>
+ip-172-31-10-242
+
+root@LAPTOP-QMBUJPPJ:~# ansible -i inventory.ini -m shell -a "hostname" app
+[WARNING]: Host 'ubuntu@3.108.52.227' is using the discovered Python interpreter at '/usr/bin/python3.14', but future installation of another Python interpreter could cause a different interpreter to be discovered. See https://docs.ansible.com/ansible-core/2.20/reference_appendices/interpreter_discovery.html for more information.
+ubuntu@3.108.52.227 | CHANGED | rc=0 >>
+ip-172-31-2-88
+
+root@LAPTOP-QMBUJPPJ:~# cat inventory.ini
+[app]
+ubuntu@3.108.52.227
+
+[db]
+ubuntu@3.110.121.253
+root@LAPTOP-QMBUJPPJ:~#
+```
