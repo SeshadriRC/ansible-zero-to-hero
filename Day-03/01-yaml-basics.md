@@ -3,6 +3,7 @@
 YAML (YAML Ain't Markup Language) is a human-readable data serialization format that is commonly used for configuration files and data exchange between languages with different data structures.
 
 - Use the yaml [linter](https://www.yamllint.com/) to validate the syntax
+- Yaml will start with `---` in the yaml file.
 
 ## YAML Syntax
 
