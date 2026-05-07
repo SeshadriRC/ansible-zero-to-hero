@@ -11,6 +11,9 @@ playbooks and environments.
 
 <img width="1919" height="970" alt="image" src="https://github.com/user-attachments/assets/ff2e9569-de38-4233-95d9-81a349747e04" />
 
+## When to use Ansible Roles ? 
+
+- Whenever there is a complex task like Oracle database installation, Kubernetes configuration ( master nodes and worker nodes )
 
 ## Key Components of an Ansible Role
 
