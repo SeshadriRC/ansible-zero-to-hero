@@ -50,6 +50,21 @@ Dockerfile  ansible314  aws-keys  awscli  dynamic.py  httpd  inventory.ini  test
 
 (ansible314) root@LAPTOP-QMBUJPPJ:~/httpd# ls
 README.md  defaults  files  handlers  meta  tasks  templates  tests  vars
+```
 
+```
+# Edit the main playbook like below
+```
+
+```yaml
+- hosts: all
+  become: true
+  roles:
+   - httpd
+```
+
+```
 # Copied the task section of the playbook
 ```
+<img width="974" height="409" alt="image" src="https://github.com/user-attachments/assets/9ea55cf7-28be-4617-9dba-845fa99cd251" />
+
