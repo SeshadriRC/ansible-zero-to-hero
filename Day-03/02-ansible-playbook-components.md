@@ -83,7 +83,9 @@ Tasks are individual actions within a play that use modules to perform operation
 
 ## Collections
 
-Collections are a distribution format for Ansible content. They bundle together multiple roles, modules, plugins, and other Ansible artifacts. Collections make it easier to share and reuse Ansible content.
+- Collections are a distribution format for Ansible content. They bundle together multiple roles, modules, plugins, and other Ansible artifacts. Collections make it easier to share and reuse Ansible content.
+- Whenever we want to communicate with another service (like AWS) then we need to use Collections. Refer **Day 06** for more details about collections
+  
 Example
 
 A collection structure might look like this:
