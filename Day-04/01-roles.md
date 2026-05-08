@@ -29,7 +29,10 @@ Tasks that are triggered by changes in other tasks, typically used for actions l
 Static files that need to be transferred to managed hosts.
 
 ### Templates
-Jinja2 templates that can be rendered and transferred to managed hosts.
+- Jinja2 templates that can be rendered and transferred to managed hosts.
+- It is same as File component, we will use template whenever there is a use case of dynamic text
+  
+  `My name is {{ ansible_facts['hostname'] }}`
 
 ### Vars
 Variables that are used within the role.
