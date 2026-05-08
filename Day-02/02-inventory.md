@@ -52,7 +52,15 @@ Here is an example of a dynamic inventory script for AWS EC2:
 
 ```bash
 # We can use the python script file using below command
+
 ansible all -i dynamic.py -m ping
+```
+```bash
+# To install boto3 set the venv
+
+python<version> -m venv <virtual_environment_path>
+python3.14 -m venv ~/ansible314
+source ~/ansible314/bin/activate
 ```
 
 ```
