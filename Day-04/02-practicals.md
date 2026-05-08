@@ -62,6 +62,8 @@ README.md  defaults  files  handlers  meta  tasks  templates  tests  vars
   roles:
    - httpd
 ```
+<img width="1163" height="270" alt="image" src="https://github.com/user-attachments/assets/877f312a-dff9-4d25-acf0-210596cbc9e8" />
+
 
 ```
 # Copied the task section of the playbook, make sure you modified index.html file location
@@ -89,3 +91,22 @@ README.md  defaults  files  handlers  meta  tasks  templates  tests  vars
 ```
 
 <img width="809" height="129" alt="image" src="https://github.com/user-attachments/assets/055ee273-3188-4da1-ab1f-466720192b78" />
+
+
+```bash
+# Run the ansible playbook
+
+ansible-playbook -i dynamic.py playbook.yml
+```
+
+<img width="1919" height="640" alt="image" src="https://github.com/user-attachments/assets/e9806894-5517-46f2-822c-7249fd5c544a" />
+
+- We can see file is copied and httpd is running.
+
+<img width="1100" height="368" alt="image" src="https://github.com/user-attachments/assets/de29e168-34c2-44b3-9f9a-627fd55dd6be" />
+
+- Able to access the application on both the EC2's
+
+<img width="1449" height="467" alt="image" src="https://github.com/user-attachments/assets/a690ff85-6830-4c6e-a017-947163eb1aa5" />
+<img width="1718" height="464" alt="image" src="https://github.com/user-attachments/assets/f9d9136a-ae8f-4aaf-8641-111f184342fb" />
+
