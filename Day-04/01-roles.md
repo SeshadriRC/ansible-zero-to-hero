@@ -25,6 +25,8 @@ The main list of actions that the role performs.
 ### Handlers
 Tasks that are triggered by changes in other tasks, typically used for actions like restarting services.
 
+Eg: [handlers](https://docs.ansible.com/projects/ansible/latest/playbook_guide/playbooks_handlers.html#handler-example)
+
 ### Files
 Static files that need to be transferred to managed hosts.
 
@@ -38,7 +40,8 @@ Static files that need to be transferred to managed hosts.
 Variables that are used within the role.
 
 ### Defaults
-Default variables for the role, which can be overridden.
+- Default variables for the role, which can be overridden.
+- If we didn't create any value for the variable which we created, then we will use Defaults, it will provide the default value to the variable
 
 ### Meta
 Metadata about the role, including dependencies on other roles.
