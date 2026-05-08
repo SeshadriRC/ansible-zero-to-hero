@@ -19,6 +19,8 @@ README.md  defaults  files  handlers  meta  tasks  templates  tests  vars
 
 [playbook-link](https://github.com/SeshadriRC/ansible-zero-to-hero/tree/main/Day-03/03-first-playbook)
 
+- indendation shortuct ( esc --> gg --> =G )
+
 ```yaml
 - hosts: all
   become: true        # It indicates, play should run as a root user.
@@ -35,4 +37,19 @@ README.md  defaults  files  handlers  meta  tasks  templates  tests  vars
         owner: root
         group: root
         mode: '0644'
+```
+
+```bash
+(ansible314) root@LAPTOP-QMBUJPPJ:~# ansible-galaxy role init httpd
+- Role httpd was created successfully
+
+(ansible314) root@LAPTOP-QMBUJPPJ:~# ls
+Dockerfile  ansible314  aws-keys  awscli  dynamic.py  httpd  inventory.ini  test
+
+(ansible314) root@LAPTOP-QMBUJPPJ:~# cd httpd/
+
+(ansible314) root@LAPTOP-QMBUJPPJ:~/httpd# ls
+README.md  defaults  files  handlers  meta  tasks  templates  tests  vars
+
+# Copied the task section of the playbook
 ```
