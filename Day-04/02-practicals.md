@@ -64,7 +64,28 @@ README.md  defaults  files  handlers  meta  tasks  templates  tests  vars
 ```
 
 ```
-# Copied the task section of the playbook
+# Copied the task section of the playbook, make sure you modified index.html file location
 ```
 <img width="974" height="409" alt="image" src="https://github.com/user-attachments/assets/9ea55cf7-28be-4617-9dba-845fa99cd251" />
 
+```yaml
+- name: Install apache httpd
+  ansible.builtin.apt:
+    name: apache2
+    state: present
+    update_cache: yes
+
+- name: Copy file with owner and permissions
+  ansible.builtin.copy:
+    src: files/index.html
+    dest: /var/www/html
+    owner: root
+    group: root
+    mode: '0644'
+```
+
+```
+# Copy the index.html file to the files directory
+```
+
+<img width="809" height="129" alt="image" src="https://github.com/user-attachments/assets/055ee273-3188-4da1-ab1f-466720192b78" />
