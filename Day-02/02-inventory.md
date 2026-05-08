@@ -63,8 +63,9 @@ def get_aws_ec2_inventory():
         'all': {
             'hosts': [],
             'vars': {
-                'ansible_user': 'ec2-user',
-                'ansible_ssh_private_key_file': '/path/to/key'
+                'ansible_user': 'ubuntu',
+                'ansible_ssh_private_key_file': '/mnt/e/WSL/AWS/EC2/first-ec2.pem',
+                'ansible_ssh_common_args': '-o StrictHostKeyChecking=no'
             }
         },
         '_meta': {
