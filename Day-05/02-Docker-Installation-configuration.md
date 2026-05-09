@@ -1,5 +1,5 @@
 1. Use the role from Ansible galaxy.
-2. Push the role to the galaxy which we created earlier.
+
 
 ---
 
@@ -61,8 +61,3 @@ ansible all -i dynamic.py -m shell -a "docker"
 
 ---
 
-### 2. Push the role to the galaxy which we created earlier
-
-- First create a new repository in git. 
-
----
