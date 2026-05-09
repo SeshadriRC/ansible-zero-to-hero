@@ -1,3 +1,10 @@
+1. Use the role from Ansible galaxy.
+2. Push the role to the galaxy which we created earlier.
+
+---
+
+### 1. Use the role from Ansible galaxy
+
 <img width="1008" height="512" alt="image" src="https://github.com/user-attachments/assets/a8a48218-5ae1-4f08-b44b-15515755394c" />
 
 - [docker-role-galaxy](https://galaxy.ansible.com/ui/standalone/roles/bsmeding/docker/)
@@ -51,3 +58,11 @@ ansible all -i dynamic.py -m shell -a "docker"
 ```
 
 <img width="1919" height="527" alt="image" src="https://github.com/user-attachments/assets/bb1750f3-275a-4a64-bb61-fa0bb3fa232e" />
+
+---
+
+### 2. Push the role to the galaxy which we created earlier
+
+- First create a new repository in git. 
+
+---
