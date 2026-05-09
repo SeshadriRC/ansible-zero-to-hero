@@ -70,5 +70,24 @@ git commit -m "ansible-role"
 git push
 ```
 
+- Repo got updated
+
 <img width="1344" height="825" alt="image" src="https://github.com/user-attachments/assets/fd113c30-09ad-456a-a4a9-a6859c4b26b7" />
 
+
+- Push the role to the ansible galaxy, before that take the API token
+
+<img width="1411" height="487" alt="image" src="https://github.com/user-attachments/assets/c42f90af-1b66-4cba-9b88-f203d42e1bb9" />
+
+
+```bash
+ansible-galaxy import <your_github_username> <role-repo>  --token <API_TOKEN>
+
+ansible-galaxy import SeshadriRC dummy-role --token 69e1ffd14
+```
+
+- Role got imported
+
+<img width="1891" height="757" alt="image" src="https://github.com/user-attachments/assets/322f6510-551f-4343-ac95-ab23bfed4e12" />
+
+<img width="1919" height="707" alt="image" src="https://github.com/user-attachments/assets/214ceb62-689e-4061-b7bc-cf9fca022f2e" />
