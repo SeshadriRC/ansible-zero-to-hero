@@ -4,7 +4,7 @@
 
 - [definition](https://github.com/SeshadriRC/ansible-zero-to-hero/blob/main/Day-03/02-ansible-playbook-components.md#collections)
 
-- [Collections-ansible-galaxy]
+- [Collections-ansible-galaxy](https://galaxy.ansible.com/ui/repo/published/amazon/aws/)
   
 <img width="1918" height="806" alt="image" src="https://github.com/user-attachments/assets/649f7ef5-421c-4410-b2c1-323e8ba9fb67" />
 
