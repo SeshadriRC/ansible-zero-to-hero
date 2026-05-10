@@ -1,5 +1,9 @@
 # Setup EC2 Collection and Authentication
 
+## Collection
+
+- [definition](https://github.com/SeshadriRC/ansible-zero-to-hero/blob/main/Day-03/02-ansible-playbook-components.md#collections)
+
 ## Install boto3
 
 ```
