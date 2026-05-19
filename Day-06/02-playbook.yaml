@@ -1,7 +1,7 @@
 --- 
 # Run the playbook on the local machine itself
 - hosts: localhost
-# Execute directly on local system
+# Do NOT use SSH Execute directly on local system. Ansible skips SSH and executes commands directly.
   connection: local          
   tasks:
   - name: start an instance with a public IP address
