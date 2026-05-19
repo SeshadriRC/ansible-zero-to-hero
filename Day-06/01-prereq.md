@@ -11,11 +11,13 @@
 
 ## Install boto3
 
+<img width="1910" height="374" alt="image" src="https://github.com/user-attachments/assets/f6b55996-7659-4fd8-a350-8a3daf3b868c" />
+
+
 ```
 pip install boto3
 ```
 
-<img width="1918" height="455" alt="image" src="https://github.com/user-attachments/assets/9e111fe5-6fd3-4b96-924c-efc7c82ff516" />
 
 
 ## Install AWS Collection
