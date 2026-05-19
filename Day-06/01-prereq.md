@@ -24,6 +24,33 @@ pip install boto3
 ansible-galaxy collection install amazon.aws
 ```
 
+
+## Create a role
+
+```
+ansible-galaxxy role init ec2
+```
+
+- In the folder of `tasks` , copy the `yaml`
+
+```yaml
+- name: start an instance with a public IP address
+    amazon.aws.ec2_instance:
+      name: "ansible-instance"
+      # key_name: "prod-ssh-key"
+      # vpc_subnet_id: subnet-013744e41e8088axx
+      instance_type: t2.micro
+      security_group: default
+      region: us-east-1
+      aws_access_key: "{{ec2_access_key}}"  # From vault as defined, this is nothing but a built in variable
+      aws_secret_key: "{{ec2_secret_key}}"  # From vault as defined      
+      network:
+        assign_public_ip: true
+      image_id: ami-04b70fa74e45c3917
+      tags:
+        Environment: Testing
+```
+
 ## Setup Vault 
 
 1. Create a password for vault
