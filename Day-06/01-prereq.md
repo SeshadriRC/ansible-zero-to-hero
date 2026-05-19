@@ -53,6 +53,11 @@ ansible-galaxxy role init ec2
         Environment: Testing
 ```
 
+<img width="995" height="352" alt="image" src="https://github.com/user-attachments/assets/b8f99f90-49d0-47c0-81b0-229b765b32cb" />
+
+<img width="1308" height="481" alt="image" src="https://github.com/user-attachments/assets/05a8cefd-759f-4f25-a480-c974bb2a1e86" />
+
+
 ## Setup Vault 
 
 1. Create a password for vault
@@ -66,7 +71,11 @@ openssl rand -base64 2048 > vault.pass
 - Generate a Access key and Secret Access key and store it in below file
 
 ```
+# To create a file
 ansible-vault create group_vars/all/pass.yml --vault-password-file vault.pass
+
+# For editing
+ansible-vault edit group_vars/all/pass.yml --vault-password-file vault.pass
 ```
 
 <img width="768" height="141" alt="image" src="https://github.com/user-attachments/assets/8413d1bb-f1ba-4a44-a582-f47427ff2106" />
