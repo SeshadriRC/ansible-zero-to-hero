@@ -74,7 +74,11 @@ ansible-vault create group_vars/all/pass.yml --vault-password-file vault.pass
 <img width="1384" height="530" alt="image" src="https://github.com/user-attachments/assets/fe452255-a988-4475-8a64-d1a093e67eb4" />
 
 
+3. Create a EC2 instance
 
+```
+ansible-playbook create_ec2.yaml --vault-password-file vault.pass
+```
 
 
 
