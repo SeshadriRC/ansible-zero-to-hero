@@ -1,4 +1,4 @@
-# Setup EC2 Collection and Authentication
+<img width="768" height="141" alt="image" src="https://github.com/user-attachments/assets/9900ab8d-2103-404a-8587-bba29c85d450" /># Setup EC2 Collection and Authentication
 
 ## Collection
 
@@ -69,7 +69,8 @@ openssl rand -base64 2048 > vault.pass
 ansible-vault create group_vars/all/pass.yml --vault-password-file vault.pass
 ```
 
-<img width="594" height="131" alt="image" src="https://github.com/user-attachments/assets/554e30f5-f46d-4b73-911f-62e8990ded56" />
+<img width="768" height="141" alt="image" src="https://github.com/user-attachments/assets/8413d1bb-f1ba-4a44-a582-f47427ff2106" />
+
 
 <img width="1384" height="530" alt="image" src="https://github.com/user-attachments/assets/fe452255-a988-4475-8a64-d1a093e67eb4" />
 
