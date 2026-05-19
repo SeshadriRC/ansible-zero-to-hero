@@ -59,7 +59,9 @@ ansible-galaxxy role init ec2
 openssl rand -base64 2048 > vault.pass
 ```
 
-2. Add your AWS credentials using the below vault command
+2. Add your AWS credentials using the below vault command.
+
+- Generate a Access key and Secret Access key and store it in below file
 
 ```
 ansible-vault create group_vars/all/pass.yml --vault-password-file vault.pass
