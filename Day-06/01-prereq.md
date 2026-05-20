@@ -87,7 +87,7 @@ ansible-vault edit group_vars/all/pass.yml --vault-password-file vault.pass
 3. Create a EC2 instance
 
 ```
-ansible-playbook create_ec2.yaml --vault-password-file vault.pass
+ansible-playbook ec2-create.yml --vault-password-file vault.pass
 ```
 
 
@@ -102,3 +102,105 @@ ansible-playbook create_ec2.yaml --vault-password-file vault.pass
     - Precedence for vars `main.yaml` is more than defaults `main.yaml`
     - extra vars
     - group vars --> we will be using this in inventory
+
+- Precedence for vars `main.yaml` is more than defaults `main.yaml`
+<img width="1127" height="838" alt="image" src="https://github.com/user-attachments/assets/862f4f8f-792b-4025-9021-b149e3adda6d" />
+
+--- 
+
+# Group vars
+
+## Folder Structure
+
+```text id="4o3rkg"
+ansible-project/
+│
+├── inventory
+├── playbook.yml
+└── group_vars/
+    ├── webservers.yml
+    └── dbservers.yml
+```
+
+
+## inventory
+
+```ini id="6x6d6v"
+[webservers]
+server1 ansible_host=192.168.1.10
+server2 ansible_host=192.168.1.11
+
+[dbservers]
+db1 ansible_host=192.168.1.20
+```
+
+This creates:
+
+* `webservers` group
+* `dbservers` group
+
+---
+
+### group_vars/webservers.yml
+
+```yaml id="q8jv1l"
+package_name: nginx
+port: 80
+```
+
+Variables for all web servers.
+
+---
+
+## group_vars/dbservers.yml
+
+```yaml id="l07m7z"
+package_name: mysql-server
+port: 3306
+```
+
+Variables for all DB servers.
+
+---
+
+## playbook.yml
+
+```yaml id="2jlwmj"
+- hosts: webservers
+  become: yes
+
+  tasks:
+    - name: Install package
+      yum:
+        name: "{{ package_name }}"
+        state: present
+
+    - name: Print port
+      debug:
+        msg: "Application runs on port {{ port }}"
+```
+
+---
+
+## What Happens
+
+For `webservers`:
+
+* `package_name = nginx`
+* `port = 80`
+
+For `dbservers`:
+
+* `package_name = mysql-server`
+* `port = 3306`
+
+Ansible automatically loads matching group variables based on inventory group name.
+
+---
+
+## Simple Understanding
+
+```text id="xyplko"
+Inventory → Defines server groups
+group_vars → Defines variables for those groups
+```
