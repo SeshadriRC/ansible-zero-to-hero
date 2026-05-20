@@ -204,3 +204,70 @@ Ansible automatically loads matching group variables based on inventory group na
 Inventory → Defines server groups
 group_vars → Defines variables for those groups
 ```
+
+---
+
+# extra vars
+
+Here is a simple example of using `--extra-vars` in Ansible with EC2 instance type.
+
+---
+
+## playbook.yml
+
+```yaml id="n8g3m0"
+- hosts: localhost
+  connection: local
+
+  tasks:
+    - name: Print EC2 instance type
+      debug:
+        msg: "Creating EC2 with instance type {{ instance_type }}"
+```
+
+---
+
+## Run Playbook with Extra Vars
+
+```bash id="98evw0"
+ansible-playbook playbook.yml --extra-vars "instance_type=t3.medium"
+```
+
+---
+
+## Output
+
+```text id="q64n96"
+Creating EC2 with instance type t3.medium
+```
+
+---
+
+## Why Extra Vars Are Used
+
+Instead of hardcoding:
+
+```yaml id="mjlwm4"
+instance_type: t3.medium
+```
+
+you pass values dynamically during execution.
+
+Example:
+
+```bash id="6dkyl4"
+--extra-vars "instance_type=t2.micro"
+```
+
+or
+
+```bash id="e7l7yj"
+--extra-vars "instance_type=t3.large"
+```
+
+Same playbook, different values.
+
+<img width="1919" height="516" alt="image" src="https://github.com/user-attachments/assets/2b0dd891-dae8-4246-880e-ddb9cbdcb906" />
+
+
+---
