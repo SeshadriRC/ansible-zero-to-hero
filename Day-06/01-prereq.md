@@ -1,6 +1,6 @@
 <img width="768" height="141" alt="image" src="https://github.com/user-attachments/assets/9900ab8d-2103-404a-8587-bba29c85d450" /># Setup EC2 Collection and Authentication
 
-## Collection
+## Collections
 
 - [definition](https://github.com/SeshadriRC/ansible-zero-to-hero/blob/main/Day-03/02-ansible-playbook-components.md#collections)
 
@@ -91,4 +91,14 @@ ansible-playbook create_ec2.yaml --vault-password-file vault.pass
 ```
 
 
+---
+# Variables
 
+- In Ansible, a variable is a placeholder used to store values that can be reused dynamically in playbooks.
+- [Variables Precedence](https://docs.ansible.com/projects/ansible/latest/playbook_guide/playbooks_variables.html#variable-precedence-where-should-i-put-a-variable) -> Total in 22 places we will be using variables
+
+
+- In this video explained below
+    - Precedence for vars `main.yaml` is more than defaults `main.yaml`
+    - extra vars
+    - group vars --> we will be using this in inventory
