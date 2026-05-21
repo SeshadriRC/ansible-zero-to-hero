@@ -4,6 +4,7 @@
 
   tasks:
     - name: Install security updates
+      # FQCN , fully qualified connection name
       ansible.builtin.apt:
         name: "{{ item }}"
         state: latest
