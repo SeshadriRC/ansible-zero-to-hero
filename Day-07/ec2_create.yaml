@@ -15,6 +15,7 @@
       network:
         assign_public_ip: true
       image_id: "{{ item.image }}"
+      # below is not required, it seems issue fixed
       tags:
         environment: "{{ item.name }}"
     loop:
