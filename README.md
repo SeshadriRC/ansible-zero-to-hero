@@ -73,6 +73,6 @@ Day 12: Ansible Tower Deep Dive
 
 Day 13: Advanced Ansible Project
 
-- Terraform + Ansible Project
+- Terraform + Ansible Project using [spacelift](https://github.com/SeshadriRC/spacelift-demo)
 
 Day 14: Ansible Interview Questions
