@@ -31,4 +31,7 @@ sesha@LAPTOP-QMBUJPPJ:~$ ansible-vault view vault.yaml --vault-password-file vau
 ec2_access: fdfd
 ec2_secrete: dfdl
 api_token: ghi
+
+# Encrypt a single value instead of encrypting the entire file
+ansible-vault encrypt_string foobar --vault-password-file vault.pass
 ```
