@@ -26,4 +26,9 @@ ec2_access: fdfd
 ec2_secrete: dfdl
 api_token: ghi
 
+# View the file without decrypting
+sesha@LAPTOP-QMBUJPPJ:~$ ansible-vault view vault.yaml --vault-password-file vault.pass
+ec2_access: fdfd
+ec2_secrete: dfdl
+api_token: ghi
 ```
