@@ -17,4 +17,13 @@ Decryption successful
 sesha@LAPTOP-QMBUJPPJ:~$ cat vault.yaml
 ec2_access: fdfd
 ec2_secrete: dfdl
+
+# Add a new password to it
+sesha@LAPTOP-QMBUJPPJ:~$ ansible-vault decrypt vault.yaml --vault-password-file vault.pass
+Decryption successful
+sesha@LAPTOP-QMBUJPPJ:~$ cat vault.yaml
+ec2_access: fdfd
+ec2_secrete: dfdl
+api_token: ghi
+
 ```
